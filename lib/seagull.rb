@@ -6,6 +6,9 @@ class Seagull
     read_file
   end
 
+  def evolve!
+  end
+
   private
 
   def read_file
