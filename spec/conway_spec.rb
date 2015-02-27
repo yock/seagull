@@ -2,8 +2,9 @@ require './lib/seagull'
 
 describe Seagull do
   subject { Seagull.new 'spec/fixtures/constructor.txt' }
-  it 'converts a text file to an array' do
-    expect(subject.board).to be_an(Array)
+
+  it 'reads the file into a two-dimensional array' do
+    expect(subject.board).to eq([[false,false],[false,true]])
   end
 end
 
